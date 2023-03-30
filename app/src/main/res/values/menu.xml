@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_menu_option1">Calculator</string>
+    <string name="main_menu_option2">Profile</string>
+    <string name="main_menu_option3">File Manipulation</string>
+</resources>
