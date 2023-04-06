@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="ca.georgiancollege.comp1011winter2023morning">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
             android:allowBackup="true"
             android:icon="@drawable/georgian_icon"
@@ -9,6 +12,15 @@
             android:roundIcon="@drawable/georgian_icon"
             android:supportsRtl="true"
             android:theme="@style/Theme.Comp1011Winter2023Morning">
+        <activity
+                android:name=".SplashActivity"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
         <activity
                 android:name=".FileManipulationActivity"
                 android:exported="true"/>
